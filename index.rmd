@@ -1,0 +1,22 @@
+---
+title: "SQL"
+output: html_document
+---
+
+## THIS IS JUST A TEST
+
+ALSKDFJALSKDJFLSAJDFLKASDJFLKJASD
+
+```{r}
+library(Lahman)
+library(sqldf)
+```
+
+
+```{r}
+query<-"SELECT playerID,HR FROM Batting
+WHERE HR>50"
+
+sqldf(query)
+```
+
